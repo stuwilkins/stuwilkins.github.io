@@ -18,31 +18,31 @@
 
 <script>
 var client = new Keen({
-	  projectId: "586556c88db53dfda8a7e515",
-	    readKey: "68473AE2D401BA04C717026048A0EE2876149D9FCBB059177292BA4E9313F1940A107AD3E0651409002366E9904364D28CCADDC80FE2EDDB19F310391D75E2145299004F9C6D34E8359A4C74AA632367F4EB7293695C84A36D92783F40C62427"
+  projectId: "586556c88db53dfda8a7e515",
+  readKey: "68473AE2D401BA04C717026048A0EE2876149D9FCBB059177292BA4E9313F1940A107AD3E0651409002366E9904364D28CCADDC80FE2EDDB19F310391D75E2145299004F9C6D34E8359A4C74AA632367F4EB7293695C84A36D92783F40C62427"
 });
   
 Keen.ready(function(){
-	  
-	  var query = new Keen.Query("average", {
-		      event_collection: "Home_Temp_Logging",
-			      filters: [
-					      {
-							          "operator": "ne",
-									          "property_name": "pool_water_temp",
-											          "property_value": 0
-														      }
-			  ],
-			      interval: "hourly",
-				      target_property: "pool_water_temp",
-					      timeframe: "this_2_days",
-						      timezone: "US/Eastern"
-								    });
-	    
-	    client.draw(query, document.getElementById("my_chart"), {
-			    // Custom configuration here
-			  });
-		  
+  
+  var query = new Keen.Query("average", {
+    event_collection: "Home_Temp_Logging",
+    filters: [
+    {
+        "operator": "ne",
+        "property_name": "pool_water_temp",
+        "property_value": 0
+    }
+],
+    interval: "hourly",
+    target_property: "pool_water_temp",
+    timeframe: "this_2_days",
+    timezone: "US/Eastern"
+  });
+  
+  client.draw(query, document.getElementById("my_chart"), {
+    // Custom configuration here
+  });
+  
 });
 </Script>
 <body class="application">
