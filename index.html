@@ -45,7 +45,7 @@ Keen.ready(function(){
 
   var chart = client.draw(query, document.getElementById("pool_water_temp"), {
     library: "google",
-  	title: null, 
+  	title: "", 
     chartType: "linechart",
 	height: 350,
 	hAxis: {
@@ -72,7 +72,7 @@ Keen.ready(function(){
   });
   
   client.draw(query, document.getElementById("pool_water_temp_max"), {
-  	title: null
+  	title: ""
   });
 
   var query = new Keen.Query("minimum", {
@@ -90,7 +90,7 @@ Keen.ready(function(){
   });
   
   client.draw(query, document.getElementById("pool_water_temp_min"), {
-    // Custom configuration here
+  	title: ""
   });
 
   var query = new Keen.Query("average", {
@@ -108,7 +108,7 @@ Keen.ready(function(){
   });
   
   client.draw(query, document.getElementById("pool_water_temp_average"), {
-    // Custom configuration here
+  	title: ""
   });
 
   var query = new Keen.Query("average", {
@@ -126,7 +126,7 @@ Keen.ready(function(){
   });
   
   client.draw(query, document.getElementById("pool_water_temp_current"), {
-    // Custom configuration here
+  	title: ""
   });
 
 });
