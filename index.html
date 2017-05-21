@@ -45,7 +45,7 @@ Keen.ready(function(){
 
   var chart = client.draw(query, document.getElementById("pool_water_temp"), {
     library: "google",
-  	title: Null, 
+  	title: null, 
     chartType: "linechart",
 	height: 350,
 	hAxis: {
@@ -72,7 +72,7 @@ Keen.ready(function(){
   });
   
   client.draw(query, document.getElementById("pool_water_temp_max"), {
-  	title: Null
+  	title: null
   });
 
   var query = new Keen.Query("minimum", {
