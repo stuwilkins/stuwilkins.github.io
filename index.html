@@ -72,7 +72,7 @@ Keen.ready(function(){
   });
   
   client.draw(query, document.getElementById("pool_water_temp_max"), {
-    // Custom configuration here
+  	title: ""
   });
 
   var query = new Keen.Query("minimum", {
@@ -178,7 +178,7 @@ Keen.ready(function(){
 	  <div class="col-sm-2">
 		<div class="chart-wrapper">
 		  <div class="chart-title">
-			Current Averaged Water Temperature
+			Current Averaged Current Water Temperature
 		  </div>
 		  <div class="chart_stage" id="pool_water_temp_current">
 		  </div>
