@@ -57,7 +57,7 @@ Keen.ready(function(){
 	 }  
   });
 
-var query = new Keen.Query("maximum", {
+  var query = new Keen.Query("maximum", {
     event_collection: "Home_Temp_Logging",
     filters: [
     {
@@ -72,6 +72,42 @@ var query = new Keen.Query("maximum", {
   });
   
   client.draw(query, document.getElementById("pool_water_temp_max"), {
+    // Custom configuration here
+  });
+
+  var query = new Keen.Query("minimum", {
+    event_collection: "Home_Temp_Logging",
+    filters: [
+    {
+        "operator": "ne",
+        "property_name": "pool_water_temp",
+        "property_value": 0
+    }
+],
+    target_property: "pool_water_temp",
+    timeframe: "this_1_days",
+    timezone: "US/Eastern"
+  });
+  
+  client.draw(query, document.getElementById("pool_water_temp_min"), {
+    // Custom configuration here
+  });
+
+  var query = new Keen.Query("average", {
+    event_collection: "Home_Temp_Logging",
+    filters: [
+    {
+        "operator": "ne",
+        "property_name": "pool_water_temp",
+        "property_value": 0
+    }
+],
+    target_property: "pool_water_temp",
+    timeframe: "this_1_days",
+    timezone: "US/Eastern"
+  });
+  
+  client.draw(query, document.getElementById("pool_water_temp_average"), {
     // Custom configuration here
   });
 
@@ -137,7 +173,6 @@ var query = new Keen.Query("maximum", {
           </div>
         </div>
       </div>
-    </div>
 
       <div class="col-sm-4">
         <div class="chart-wrapper">
@@ -152,6 +187,19 @@ var query = new Keen.Query("maximum", {
         </div>
       </div>
 
+      <div class="col-sm-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Impressions by advertiser
+          </div>
+          <div class="chart-stage" id="pool_water_temp_average">
+          </div>
+          <div class="chart-notes">
+            Notes go down here
+          </div>
+        </div>
+      </div>
+    </div>
     <hr>
 
     <p class="small text-muted">Built with &#9829; by <a href="https://keen.io">Keen IO</a></p>
