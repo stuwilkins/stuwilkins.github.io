@@ -125,7 +125,7 @@ Keen.ready(function(){
     timezone: "US/Eastern"
   });
   
-  client.draw(query, document.getElementById("pool_water_temp_average"), {
+  client.draw(query, document.getElementById("pool_water_temp_current"), {
     // Custom configuration here
   });
 
@@ -163,12 +163,24 @@ Keen.ready(function(){
   <div class="container-fluid">
     <div class="row">
 
-      <div class="col-sm-12">
+      <div class="col-sm-8">
         <div class="chart-wrapper">
           <div class="chart-title">
             Pageviews by browser (past 24 hours)
           </div>
           <div class="chart_stage" id="pool_water_temp">
+          </div>
+          <div class="chart-notes">
+            This is a sample text region to describe this chart.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Pageviews by browser (past 24 hours)
+          </div>
+          <div class="chart_stage" id="pool_water_temp_current">
           </div>
           <div class="chart-notes">
             This is a sample text region to describe this chart.
