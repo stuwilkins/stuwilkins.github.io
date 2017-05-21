@@ -44,9 +44,17 @@ Keen.ready(function(){
   });
 
   var chart = client.draw(query, document.getElementById("pool_water_temp"), {
-  	title: "Pool Water Temp",
+    library: "google",
+  	title: null,
     chartType: "linechart",
-	height: 350
+	height: 350,
+	hAxis: {
+		format:'d MMM'
+	},
+	vAxis: { 
+		minValue: 15,
+		maxValue: 25
+	 }  
   });
 
 });
