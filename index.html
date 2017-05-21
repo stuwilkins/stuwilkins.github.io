@@ -226,6 +226,17 @@ Keen.ready(function(){
       });
   };
 
+  histogram('pool_water_temp_histogram', {
+      segment_length: 60,  // In seconds
+      data_points: 10,  // i.e. There will be 10 bars on our chart
+      analysis_type: 'count',
+      query_parameters: {
+          event_collection: 'session_end',
+          timeframe: timeframe,
+          filters: []
+      }
+  });
+
 });
 
 </Script>
@@ -277,7 +288,7 @@ Keen.ready(function(){
 		  <div class="chart-title">
 			Pageviews by browser (past 24 hours)
 		  </div>
-		  <div class="chart_stage" id="pool_water_temp_current">
+		  <div class="chart_stage" id="pool_water_temp_histogram">
 		  </div>
 		  <div class="chart-notes">
 			This is a sample text region to describe this chart.
