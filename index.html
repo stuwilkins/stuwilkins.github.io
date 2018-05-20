@@ -43,18 +43,50 @@ Keen.ready(function(){
     timezone: "US/Eastern"
   });
 
-  var chart = client.draw(query, document.getElementById("pool_water_temp"), {
-    library: "google",
-  	title: false,
-    chartType: "linechart",
-	height: 350,
-	hAxis: {
-		format:'d MMM hh:mm'
-	},
-	vAxis: { 
-		minValue: 15,
-		maxValue: 25
-	 }  
+  var query2 = new Keen.Query("average", {
+    event_collection: "Home_Temp_Logging",
+    filters: [{
+        "operator": "ne",
+        "property_name": "air_temp",
+        "property_value": 0
+	}],
+    interval: "hourly",
+    target_property: "air_temp",
+    timeframe: "this_7_days",
+    timezone: "US/Eastern"
+  });
+
+  var query3 = new Keen.Query("average", {
+    event_collection: "Home_Temp_Logging",
+    filters: [{
+        "operator": "ne",
+        "property_name": "humidity",
+        "property_value": 0
+	}],
+    interval: "hourly",
+    target_property: "humidity",
+    timeframe: "this_7_days",
+    timezone: "US/Eastern"
+  });
+
+  var chart = new Keen.Dataviz()
+    .el('#pool_water_temp')
+    .title('Title')
+    .height(300)
+    .type("area-step")
+    .prepare();
+
+  client.run([query, query2], function(err, res) {
+  chart
+    .data(res[0])
+    .labelMapping({
+      'Result': 'User Actions'
+    })
+    .call(function() {
+      var ds2 = Keen.Dataset.parser('interval')(res[1]);
+      this.dataset.appendColumn('Purchases', ds2.selectColumn(1).slice(1));
+    })
+    .render();
   });
 
   var query = new Keen.Query("maximum", {
