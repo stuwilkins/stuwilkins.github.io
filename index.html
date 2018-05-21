@@ -90,38 +90,38 @@ Keen.ready(function(){
     .render();
   });
 
-	var chart = new Keen.Dataviz()
-	  .el('#pool_water_temp_max')
-	  .height(300)
-	  .prepare();
+	//var chart = new Keen.Dataviz()
+	//  .el('#pool_water_temp_max')
+	//  .height(300)
+	//  .prepare();
 
-	// Use keen-analysis.js to run a query
-	// and pass the result into your chart:
-	client
-	  .query('maximum', {
-		event_collection: 'Home_Temp_Logging',
-		filters: [
-		{
-			"operator": "ne",
-			"property_name": "pool_water_temp",
-			"property_value": 0
-		}
-	    ],
-		target_property: "pool_water_temp",
-		timeframe: "this_1_days",
-		timezone: "US/Eastern"
-      })
-	  .then(function(res) {
-		// Handle the result
-		chart
-		  .data(res)
-		  .render();
-	  })
-	  .catch(function(err) {
-		// Handle the error
-		chart
-		  .message(err.message);
-	  });
+	//// Use keen-analysis.js to run a query
+	//// and pass the result into your chart:
+	//client
+	//  .query('maximum', {
+	//	event_collection: 'Home_Temp_Logging',
+	//	filters: [
+	//	{
+	//		"operator": "ne",
+	//		"property_name": "pool_water_temp",
+	//		"property_value": 0
+	//	}
+	//    ],
+	//	target_property: "pool_water_temp",
+	//	timeframe: "this_1_days",
+	//	timezone: "US/Eastern"
+    //  })
+	//  .then(function(res) {
+	//	// Handle the result
+	//	chart
+	//	  .data(res)
+	//	  .render();
+	//  })
+	//  .catch(function(err) {
+	//	// Handle the error
+	//	chart
+	//	  .message(err.message);
+	//  });
 
   var query = new Keen.Query("average", {
     event_collection: "Home_Temp_Logging",
@@ -131,7 +131,7 @@ Keen.ready(function(){
         "property_name": "pool_water_temp",
         "property_value": 0
     }
-],
+    ],
     target_property: "pool_water_temp",
     timeframe: "this_1_days",
     timezone: "US/Eastern"
