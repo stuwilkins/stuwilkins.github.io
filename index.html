@@ -74,7 +74,7 @@ Keen.ready(function(){
   var chart = new Keen.Dataviz()
     .el('#pool_water_temp')
     .title('Title')
-    .height(300)
+    .height(500)
     .type("line")
     .prepare();
 
@@ -82,11 +82,11 @@ Keen.ready(function(){
   chart
     .data(res[0])
     .labelMapping({
-      'Result': 'User Actions'
+      'Result': 'Pool Water Temp'
     })
     .call(function() {
       var ds2 = Keen.Dataset.parser('interval')(res[1]);
-      this.dataset.appendColumn('Purchases', ds2.selectColumn(1).slice(1));
+      this.dataset.appendColumn('Air Temp', ds2.selectColumn(1).slice(1));
     })
     .render();
   });
