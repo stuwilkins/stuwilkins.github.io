@@ -30,7 +30,8 @@ twitter_username: stuwilkins
 github_username:  stuwilkins
 
 # Build settings
-theme: alembic-jekyll-theme
+theme: github-remote-theme
+#theme: alembic-jekyll-theme
 remote_theme: daviddarnes/alembic
 plugins:
 - jekyll-sitemap
