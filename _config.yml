@@ -87,7 +87,7 @@ email: "webmaster@stuwilkins.org"
 # service_worker: false # Will turn off the service worker if set to false
 css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
-avatarurl: '/assets/logos/bike.ico'
+favicon_url: '/assets/logos/bike.ico'
 
 # 9. Site navigation
 navigation_header:
