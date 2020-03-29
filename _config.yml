@@ -104,6 +104,9 @@ navigation_header:
   About: /about/
   Blog: /blog/
 
+navigation_footer:
+  Home: /
+
 #navigation_footer:
 #- title: Created by Stuart Wilkins
 #  url: https://stuwilkins.org
