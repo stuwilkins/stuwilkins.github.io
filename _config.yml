@@ -40,7 +40,7 @@ collections:
     feature_text: |
       Welcome to the blog
     #feature_image: "https://picsum.photos/2560/600?image=866"
-    feature_image: "IMG_0474.jpg"
+    feature_image: "https://www.stuwilkins.org/IMG_0474.jpg"
 
 # 6. Jekyll collections settings
 defaults:
