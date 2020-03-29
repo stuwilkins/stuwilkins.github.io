@@ -87,16 +87,7 @@ email: "webmaster@stuwilkins.org"
 # service_worker: false # Will turn off the service worker if set to false
 css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
-# 8. Site favicons & manifest icons
-favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
-  16: '/assets/logos/bike.ico'
-  32: '/assets/logos/bike.ico'
-  96: '/assets/logos/bike.ico'
-  120: '/assets/logos/bike.ico'
-  144: '/assets/logos/bike.ico'
-  180: '/assets/logos/bike.ico'
-  512: '/assets/logos/bike.ico'
-  1024: '/assets/logos/bike.ico'
+avatarurl: '/assets/logos/bike.ico'
 
 # 9. Site navigation
 navigation_header:
