@@ -28,6 +28,6 @@
     {% include post-pagination.html %}
 {% else %}
     <h4>Recent Posts</h4>
-    {% assign related_posts = site.posts | slice: 0, 3 %}
+    {% assign related_posts = site.posts | slice: 0, 1 %}
     {% include post-related.html %}
 {% endif %}
