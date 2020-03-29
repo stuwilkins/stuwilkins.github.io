@@ -1,7 +1,7 @@
 ---
 title: Stuart B. Wilkins`
 layout: page
-feature_image: "https://stuwilkins.org/assets/images/IMG_0474.jpg"
+feature_image: "https://picsum.photos/1300/400?image=989"
 feature_text: |
   ## Hello world
 aside: true
