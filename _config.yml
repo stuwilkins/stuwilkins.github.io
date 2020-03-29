@@ -1,3 +1,36 @@
+exclude:
+- README.md
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- vendor
+
+plugins:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-default-layout
+- jekyll-feed
+- jekyll-commonmark
+- jekyll-include-cache
+- jemoji
+- jekyll-remote-theme
+
+sass:
+  style: compressed
+  sass_dir: _sass
+
+ipaginate: 8 # jekyll-paginate > items per page
+paginate_path: "/blog/page:num/" # jekyll-paginate > blog page
+jekyll-mentions: https://twitter.com # base url for jekyll mentions
+
+twitter:
+  username: stuwilkins
+
+author: Stuart Wilkins
 title: Stuart Wilkins's Blog
 email: stuart@stuwilkins.org
 description: >- # this means to ignore newlines until "baseurl:"
@@ -13,19 +46,6 @@ github_username:  stuwilkins
 
 theme: github-remote-theme
 remote_theme: daviddarnes/alembic
-plugins:
-- jekyll-sitemap
-- jekyll-mentions
-- jekyll-paginate
-- jekyll-seo-tag
-- jekyll-redirect-from
-- jekyll-default-layout
-- jekyll-feed
-- jekyll-commonmark
-- jekyll-include-cache
-- jemoji
-- jekyll-remote-theme
-
 sass:
   style: compressed # Style compression
 permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
