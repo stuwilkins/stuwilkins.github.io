@@ -74,7 +74,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: en-US # Set the site language
 title: "Stuart Wilkins" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/bike2.png" # Site logo, also used in jekyll-seo-tag
 description: "Stuart's Personal Website"
 url: "https://stuwilkins.org"
 baseurl: ""
