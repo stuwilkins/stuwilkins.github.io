@@ -1,6 +1,6 @@
 ---
 title: Stuart B. Wilkins`
-layout: default
+layout: page
 feature_image: "https://stuwilkins.org/assets/images/IMG_0474.jpg"
 feature_text: |
   ## Hello world
