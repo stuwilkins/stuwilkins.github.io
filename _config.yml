@@ -104,9 +104,9 @@ navigation_header:
   About: /about/
   Blog: /blog/
 
-navigation_footer:
-- title: Created by Stuart Wilkins
-  url: https://stuwilkins.org
+#navigation_footer:
+#- title: Created by Stuart Wilkins
+#  url: https://stuwilkins.org
 
 #social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
 #  Twitter: https://twitter.com/stuwilkins
@@ -117,7 +117,7 @@ navigation_footer:
 
 contact:
   github: https://github.com/stuwilkins
-  strava: https://strava.com/stuwilkins
+  strava: https://www.strava.com/athletes/4594992
   twitter: https://twitter.com/stuwilkins
   linkedin: https://www.linkedin.com/in/stuart-wilkins-69076627
   instagram: http://instagram.com/stuwilkins
