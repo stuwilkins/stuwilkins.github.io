@@ -1,7 +1,7 @@
 ---
 layout: home
 title: About Me
-image: "assets/images/IMG_0474.jpg"
+image: "/assets/images/IMG_0474.jpg"
 feature_text: <h2 class="whitetext highlighted">About Me<h2>
 ---
 
