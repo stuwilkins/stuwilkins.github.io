@@ -39,7 +39,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.stuwilkins.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://stuwilkins.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: stuwilkins
 github_username:  stuwilkins
@@ -76,7 +76,7 @@ lang: en-US # Set the site language
 title: "Stuart Wilkins" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "Stuart's Personal Website"
-url: "https://www.stuwilkins.org"
+url: "https://stuwilkins.org"
 baseurl: ""
 repo: "https://github.com/stuwilkins/stuwilkins.github.io/"
 email: "webmaster@stuwilkins.org"
@@ -115,13 +115,14 @@ navigation_header:
 
 navigation_footer:
 - title: Created by Stuart Wilkins
-  url: https://www.stuwilkins.org
+  url: https://stuwilkins.org
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/stuwilkins
   LinkedIn: https://www.linkedin.com/in/stuart-wilkins-69076627
   GitHub: https://github.com/stuwilkins
-  link: https://www.stuwilkins.org
+  Instagram: http://instagram.com/stuwilkins
+  link: https://stuwilkins.org
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
   Twitter: "#0d94e7"
