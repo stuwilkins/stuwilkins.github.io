@@ -81,10 +81,6 @@ baseurl: ""
 repo: "https://github.com/stuwilkins/stuwilkins.github.io/"
 email: "webmaster@stuwilkins.org"
 
-# disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
-# google_analytics: ''
-# google_analytics_anonymize_ip: ''
-# service_worker: false # Will turn off the service worker if set to false
 css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
 favicon_url: '/assets/logos/bike.ico'
@@ -97,17 +93,6 @@ navigation_header:
 
 navigation_footer:
   Adopted Alembic Theme: https://alembic.darn.es/
-
-#navigation_footer:
-#- title: Created by Stuart Wilkins
-#  url: https://stuwilkins.org
-
-#social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
-#  Twitter: https://twitter.com/stuwilkins
-#  LinkedIn: https://www.linkedin.com/in/stuart-wilkins-69076627
-#  GitHub: https://github.com/stuwilkins
-#  Instagram: http://instagram.com/stuwilkins
-#  link: https://stuwilkins.org
 
 contact:
   github: https://github.com/stuwilkins
